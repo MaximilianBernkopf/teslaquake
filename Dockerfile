@@ -1,6 +1,6 @@
 FROM python:3.10-bullseye
 
-EXPOSE 8501
+EXPOSE $PORT
 
 WORKDIR /app
 
@@ -10,4 +10,7 @@ RUN pip3 install -r requirements.txt
 
 COPY teslaquake .
 
-ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+#ENV STREAMLIT_SERVER_PORT=$PORT
+#ENTRYPOINT ["streamlit", "run", "app.py"]
+
+CMD ["sh", "-c", "streamlit run --server.port $PORT app.py"] 

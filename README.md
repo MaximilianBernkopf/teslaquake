@@ -12,8 +12,8 @@ streamlit run teslaquake/app.py
 
 
 ```
-docker build -t streamlit .
-docker run -p 8501:8501 --env-file .env streamlit
+. .env && docker build -t streamlit .
+docker run -p 8501:$PORT --env-file .env streamlit
 ```
 
 TODO:
