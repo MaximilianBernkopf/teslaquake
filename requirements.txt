@@ -1,0 +1,6 @@
+pandas
+streamlit
+fastapi
+numpy
+psycopg2
+sqlmodel

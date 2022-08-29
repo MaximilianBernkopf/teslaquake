@@ -10,4 +10,11 @@ pip install sqlmodels
 streamlit run teslaquake/app.py
 ```
 
-https://railway.app/project/1bf3af08-5d38-450a-a50c-76eee9d75a1f
+
+```
+docker build -t streamlit .
+docker run -p 8501:8501 --env-file .env streamlit
+```
+
+TODO:
+- Fix dependencies to specific version
