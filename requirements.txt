@@ -3,4 +3,7 @@ streamlit
 fastapi
 numpy
 psycopg2
+plotly
 sqlmodel
+sqlalchemy
+scipy
