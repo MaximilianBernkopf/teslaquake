@@ -77,7 +77,7 @@ with st.sidebar:
     with col1:
         start_date = st.date_input("Start date", date(2017, 1, 1), min_value = STREAMLIT_MIN_DATE, max_value=STREAMLIT_MAX_DATE)
     with col2:
-        end_date = st.date_input("End date", date(2017, 12, 31), min_value = STREAMLIT_MIN_DATE, max_value=STREAMLIT_MAX_DATE)
+        end_date = st.date_input("End date", date(2017, 3, 1), min_value = STREAMLIT_MIN_DATE, max_value=STREAMLIT_MAX_DATE)
         
 
     min_mag, max_mag = st.slider(
