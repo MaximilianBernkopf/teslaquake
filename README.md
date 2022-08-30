@@ -13,8 +13,9 @@ streamlit run teslaquake/app.py
 
 ```
 . .env && docker build -t streamlit .
-docker run -p 8501:$PORT --env-file .env streamlit
+docker run -p $PORT:$PORT --env-file .env streamlit
 ```
 
 TODO:
 - Fix dependencies to specific version
+- Fix docker railway port madness
