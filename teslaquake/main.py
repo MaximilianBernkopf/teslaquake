@@ -41,8 +41,6 @@ def main():
 
     create_db_and_tables()
 
-    #create_events(date.fromisoformat("1000-01-01"), date.fromisoformat("1950-01-01"))
-
     starttime = date.fromisoformat(START_DATE_ISO_STR)
     endtime = starttime + timedelta(weeks=1)
     
@@ -53,10 +51,4 @@ def main():
 if __name__ == "__main__":
     
     main()
-
-    with Session(engine) as session:
-        statement = select(Event).where(col(Event.mag) >= 1)
-        events = session.exec(statement)
-        for event in events:
-            print(event)
 
