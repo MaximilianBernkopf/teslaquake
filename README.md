@@ -2,6 +2,8 @@
 
 Coding Challenge for Tesla applictation.
 
+App: https://teslaquake-production.up.railway.app/
+
 ```
 conda create -n teslaquake python=3.10 pandas numpy fastapi psycopg2 plotly sqlalchemy scipy
 conda activate teslaquake
