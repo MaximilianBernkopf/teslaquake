@@ -8,6 +8,9 @@ COPY requirements.txt .
 
 RUN pip3 install -r requirements.txt
 
+RUN mkdir ~/.streamlit
+COPY config.toml ~/.streamlit/config.toml
+
 COPY teslaquake .
 
 #TODO: 
